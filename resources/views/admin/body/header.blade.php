@@ -121,6 +121,7 @@
 			  </li>
 			</ul>
           </li>	
+          
 		  <li>
               <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
 			  	<i class="ti-settings"></i>

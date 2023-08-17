@@ -263,7 +263,11 @@ Home Easy Online Shop
         </div>
         <!-- /.info-boxes --> 
         <!-- ============================================== INFO BOXES : END ============================================== --> 
-        <!-- ============================================== SCROLL TABS ============================================== -->
+
+
+
+
+        <!-- ========= SCROLL TABS ===================== -->
 
 
         <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
@@ -281,12 +285,14 @@ Home Easy Online Shop
 
               </a></li>
               @endforeach
-              {{-- <li><a data-transition-type="backSlide" href="#laptop" data-toggle="tab">Electronics</a></li>
-              <li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">Shoes</a></li> --}}
+            
 
             </ul>
             <!-- /.nav-tabs --> 
           </div>
+
+
+
           <div class="tab-content outer-top-xs">
 
 
@@ -374,9 +380,10 @@ Home Easy Online Shop
 
 
 
-@foreach($categories as $category)
+
+      @foreach($categories as $category)
             
-            <div class="tab-pane in active" id="category{{ $category->id }}">
+            <div class="tab-pane" id="category{{ $category->id }}">
               <div class="product-slider">
                 <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" data-item="4">
 
@@ -479,8 +486,11 @@ Home Easy Online Shop
           <!-- /.tab-content --> 
         </div>
         <!-- /.scroll-tabs --> 
-        <!-- ============================================== SCROLL TABS : END ============================================== --> 
-        <!-- ============================================== WIDE PRODUCTS ============================================== -->
+        <!-- ================= SCROLL TABS : END ================== --> 
+
+
+
+        <!-- ====================== WIDE PRODUCTS =============== -->
         <div class="wide-banners wow fadeInUp outer-bottom-xs">
           <div class="row">
             <div class="col-md-7 col-sm-7">
@@ -565,7 +575,10 @@ Home Easy Online Shop
 
         <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
       </li>
-      <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+
+      
+        <button class="btn btn-primary icon" type="button" title="Wishlist" id="{{ $product->id }}" onclick="addToWishList(this.id)"> <i class="fa fa-heart"></i> </button>
+     
       <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
     </ul>
   </div>

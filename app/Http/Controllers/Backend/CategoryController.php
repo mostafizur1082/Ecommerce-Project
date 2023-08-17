@@ -82,5 +82,6 @@ class CategoryController extends Controller
             'aleart-type' => 'info' 
         );
         return redirect()->back()->with($notification);
+        //dre5e5rte54e54
     }
 }
